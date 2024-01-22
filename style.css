@@ -16,10 +16,26 @@
 }
 
 html, body{
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     /* overflow: hidden; */
-}s
+}
+
+#curser{
+    height: 7vw;
+    width: 7vw;
+    background-color: #ff5f38;
+    border-radius: 35% 65% 37% 63% / 45% 55% 45% 55%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#curser h5{
+    font-size: 1.5vw;
+}
 
 .page1{
     height: 100vh;
@@ -36,16 +52,17 @@ html, body{
 }
 
 .page1--content{
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
     position: relative;
     /* background: #000000; */
-    z-index: 10;
+    z-index: 12;
     color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    /* padding-bottom: 2vw; */
 }
 
 .page1--content nav{
@@ -54,20 +71,27 @@ html, body{
   justify-content: space-between;
   width: 100%;
   /* background: red; */
-  padding: 1vw 15vh;
+  padding: 1vw 4vh;
 }
 
 
-nav h3{
-    font-size: 3.4vw;
+.page1--content nav h3{
+    font-size: 2.4vw;
     font-weight: 100;
 }
 
-nav h4{
-    font-size: 2.4vw;
+.page1--content nav h4{
+    font-size: 2vw;
     /* font-weight: 100; */
 }
 
 .page1--content h1{
+    font-family: rj;
+    font-size: 27vw;
+    line-height: 27vw;
+    font-weight: 100;
+}
+
+.page1--content h1 span{
     font-family: rj;
 }
