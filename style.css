@@ -25,12 +25,13 @@ html, body{
     height: 7vw;
     width: 7vw;
     background-color: #ff5f38;
-    border-radius: 35% 65% 37% 63% / 45% 55% 45% 55%;
+    border-radius: 50%;
     position: fixed;
     z-index: 9;
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: translate(-50%, -50%);
 }
 
 #curser h5{
@@ -94,4 +95,50 @@ html, body{
 
 .page1--content h1 span{
     font-family: rj;
+}
+
+
+.page2{
+    height: 100vh;
+    width: 100%;
+    /* background-color: beige; */
+    position: relative;
+}
+
+.first{
+    /* margin: 2vh, 0; */
+    height: 16vh;
+    width: 96%;
+    /* background-color: #ff5f38; */
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 1% 0vh;
+    border-bottom: 1px solid black;
+    margin: 4px 26px;
+}
+
+
+.hand{
+    font-weight: 300;
+    font-family: nb;
+}
+
+.second{
+    /* background-color: beige; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: -22vh 27vh;
+}
+    
+
+.second h1{
+    flex-wrap: wrap;
+    color: rgb(107, 107, 107);
+    font-family: nb;
+    letter-spacing: .2em;
+    line-height: 41px;
 }
