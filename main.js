@@ -77,20 +77,20 @@ page1Content.addEventListener("mouseleave", function(){
 curserEffect()
 
 
-// function page2Animation (){
-// gsap.from(".elem h1", {
-//    y:120,
-//    stagger: 0.2,
-//    duration:1,
-//    scrollTrigger: {
-//       trigger:".page2",
-//       scroller: "#main-wrapper",
-//       start : "top 47%",
-//       end : "top 46%",
-//       markers : true,
-//       scrub : 2
-//    }
-// })
-// }
+function page2Animation (){
+gsap.from(".second h1", {
+   y:120,
+   stagger: .1,
+   duration:3,
+   scrollTrigger: {
+      trigger:".page2",
+      scroller: "#main-wrapper",
+      start : "top 47%",
+      end : "top 46%",
+      // markers : true,
+      scrub : 5
+   }
+})
+}
 
-// page2Animation()
+page2Animation()
