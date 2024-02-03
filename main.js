@@ -38,7 +38,6 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 ScrollTrigger.refresh();
 
 }
-
 locoScroll()
 
 function curserEffect(){
@@ -73,7 +72,6 @@ page1Content.addEventListener("mouseleave", function(){
    })
 })
 }
-
 curserEffect()
 
 
@@ -92,5 +90,18 @@ gsap.from(".second h1", {
    }
 })
 }
-
 page2Animation()
+
+
+function swipper(){
+   var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+         delay: 2500,
+         disableOnInteraction: false,
+       },
+      })
+}
+swipper();
