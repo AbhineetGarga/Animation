@@ -105,3 +105,53 @@ function swipper(){
       })
 }
 swipper();
+
+function loader(){
+  var tl = gsap.timeline()
+
+  tl.from(".loader h3",{
+   x:200,
+   opacity: 0,
+   duration: 1,
+   stagger: 0.1
+  })
+
+  tl.to(".loader h3",{
+   opacity:0,
+   x:-40,
+   duration: 1,
+   stagger: 0.1
+  })
+
+  tl.to(".loader ",{
+   opacity:0,
+  })
+
+  tl.to(".loader ",{
+   display: "none"
+  })
+
+  tl.from(".page1 h1 span",{
+   y:100,
+   opacity:0,
+   stagger:0.1,
+   duration:0.5
+  })
+
+}
+
+loader()
+
+
+// function newanimation(){
+   
+//   gsap.to(".speciel",{
+//    x:100,
+//    // opacity: 0,
+//    duration: 1,
+//    stagger: 0.1
+//   })
+// }
+
+
+// newanimation()

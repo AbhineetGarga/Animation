@@ -96,10 +96,12 @@ html, body{
     font-size: 27vw;
     line-height: 27vw;
     font-weight: 100;
+   
 }
 
 .page1--content h1 span{
     font-family: rejoy;
+    display: inline-block;
 }
 
 
@@ -325,3 +327,55 @@ html, body{
     margin-left: auto;
     margin-right: auto;
   }
+
+  .loader{
+   height: 100%;
+   width: 100%;
+   position: fixed;
+   top: 0;
+   background-color: #000;
+   color: #fff;
+   z-index: 99;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+  }
+
+  .loader h3{
+    font-size: 2vw;
+  }
+
+
+  .last-div{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-div{
+    margin: 2vh 1vh;
+}
+
+.last-div-font{
+    font-family: nb;
+}
+
+.second-div h1 a{
+    text-decoration: none;
+    list-style: none;
+}
+
+.second-div ::after{
+    content: "";
+    /* width: 100%;
+    height: 5px;
+    background-color: #000;
+    position: fixed; */
+    display: block;
+    border-bottom: 1px solid black;
+    /* margin-top: 8px; */
+}
